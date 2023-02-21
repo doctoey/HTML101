@@ -7,6 +7,37 @@
     <title>Document</title>
 </head>
 <body>
-    <form action=""></form>
+    <form>
+        <h1>Travel reservation form</h1>
+        <h3><b>* denotes mandotory</b></h3>
+        <div>
+            <label for="firstname">Full name*:</label>
+            <input type="text" name="fname" placeholder="FirstName Lastname" required>
+        </div>
+        <div>
+            <label for="email">Email address*:</label>
+            <input type="email" name="email" placeholder="EMAIL_ADDRESS" required>
+        </div>
+        <div>
+            <label for="selecttour">Select Tour package*:</label>
+            <select name="tour" id="tour" required>
+                <option value="taiwan">Taiwan</option>
+                <option value="japan" selected >Japan</option>  <!--ใส่ selected ให้ มันเลือก japan เป็น default-->
+                <option value="korean">Korean</option>
+                <option value="england">England</option>
+            </select>
+        </div>
+        <div>
+            <label for="date">Arrival date*:</label>
+            <input type="date"name="ardate" placeholder="วันที่จะถึง" required>
+        </div>
+        <div>
+            <label for="number">Number of persons*:</label>
+            <input type="number"name="numberp" placeholder="UNKNOWN_TYPE" min="0" max="99" required>
+        </div>
+        <div>
+            <input type="submit"name="บันทึกข้อมูล" value="complete reservation">
+        </div>
+    </form>
 </body>
 </html>
